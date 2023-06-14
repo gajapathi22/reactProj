@@ -1,38 +1,17 @@
-.App {
-  text-align: center;
+a{
+  color: white !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@keyframes backgroundAnimation {
+  0% { background-color: #ff0000; } /* Define your desired initial background color */
+  50% { background-color: #00ff00; } /* Define an intermediate background color */
+  100% { background-color: #0000ff; } /* Define your desired final background color */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.backgroundAnimation{
+  animation: backgroundAnimation 10s infinite; /* Adjust the duration as needed */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-action {
+  padding: 20px;
 }
