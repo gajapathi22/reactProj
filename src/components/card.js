@@ -23,3 +23,7 @@ const Card = ({name,position,description,image})=>{
 };
 
 export default Card
+
+// backgroundImage: "url('./react.jpg')",
+// backgroundSize: 'cover',
+// backgroundPosition: 'center'

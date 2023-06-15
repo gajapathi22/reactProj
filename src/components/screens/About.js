@@ -1,68 +1,64 @@
+import { Axios } from 'axios';
 import React from 'react';
+import MyComponent from '../Axios';
 
-
-  
-  
-  
-const About  =() =>{
-    const div1Style = {
-        position: 'absolute',
-        top: '20%',
-        left: '5%',
-        backgroundColor: '#f2f2f2',
-        padding: '20px',
-        borderRadius: '5px',
-      };
+const About = () => {
+  const containerStyle = {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'flex-start',
+    backgroundImage: "url('./react.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+    minHeight:'100vh'
     
-      const div2Style = {
-        position: 'absolute',
-        top: '50%',
-        right: '5%',
-        transform: 'translateX(-50%)',
-        backgroundColor: '#f2f2f2',
-        padding: '20px',
-        borderRadius: '5px',
-      };
-    
-      const div3Style = {
-        position: 'absolute',
-        bottom: '5%',
-        left: '5%',
-        backgroundColor: '#f2f2f2',
-        padding: '20px',
-        borderRadius: '5px',
-      };
+  };
 
-    const divStyle = {
-       
-        height: '100vh',
-        backgroundImage: "url('./react.jpg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      };
-    return(
-        <>  
-        <div style= {divStyle}>
-              <div style={div1Style}>
-                   <h3>Left Side</h3>
-                   <p>This is the content on the left side.</p>
-             </div>
+  const div1Style = {
+    backgroundColor: '#f2f2f2',
+    padding: '50px ',
+    borderRadius: '50px',
+    margin: ' 50px  800px  50px 50px',
+  };
 
-             <div style={div2Style}>
-                  <h3>Center</h3>
-                  <p>This is the content in the center.</p>
-             </div>
+  const div2Style = {
+    backgroundColor: '#f2f2f2',
+    padding: '50px',
+    borderRadius: '50px',
+    mrgin:'100px ' ,
+    marginLeft: '800px',
+    marginRight:'auto'
+  };
 
-             <div style={div3Style}>
-                   <h3>Bottom Left Side</h3>
-                   <p>This is the content at the bottom left side.</p>
-             </div>
-        </div>
-            
-        </>
-       
-    )
-        
-}
+  const div3Style = {
+    backgroundColor: '#f2f2f2',
+    padding: '50px',
+    borderRadius: '50px',
+    margin: '50px  100px  10px 50px',
+  };
+  const paragraphStyle = {
+    wordWrap: 'break-word',
+  };
 
-export default About
+  return (
+    <div style={containerStyle}>
+      <div style={div1Style}>
+        <h3>Top Left</h3>
+        <p style = {paragraphStyle}>This is the chggvgvhgvjhvjhvjhjhvjvjhvjvjhvjhvjhvjhvjvjvjvjhvjhvjvjjhvjhvjhvjhvjhvjhvjhvjhvjhvjhvjvjvgvhgvghvjvjvhvvgvhgvhvhgv devdhmqvdqgvedvgedvedhontent on the top left side.</p>
+      </div>
+
+      <div style={div2Style}>
+        <h3>Center Right</h3>
+        <p style = {paragraphStyle}>This is the contehgvhgvhgvjvjvmhjvmhjvjmvmjvmvmvgmvnt in the center right.</p>
+      </div>
+
+      <div style={div3Style}>
+        <h3>Bottom Left</h3>
+        <p style = {paragraphStyle}>Tgfhis is the content ajvkukuqwkubqdebibqkiiqt hgcvxjycwhxgfjysxjqytfxjqfxjqyfxjftxjyqtfjqwfyfwtqjxyuftuxfxfthe bottom left side.</p>
+      </div>
+      <MyComponent/>
+    </div>
+  );
+};
+
+export default About;

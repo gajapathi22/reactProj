@@ -9,7 +9,7 @@ const Home  =() =>{
         height: '100vh',
         backgroundImage: "url('./react.jpg')",
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: 'left',
       };
     
       const contentStyle = {
